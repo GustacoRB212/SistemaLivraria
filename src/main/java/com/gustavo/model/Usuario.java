@@ -1,4 +1,5 @@
-package com.goias;
+package com.gustavo.model;
+
 import java.util.ArrayList;
 
 public class Usuario {

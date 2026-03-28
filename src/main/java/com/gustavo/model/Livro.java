@@ -1,4 +1,4 @@
-package com.goias;
+package com.gustavo.model;
 
 public class Livro {
     private String nomeLivro;

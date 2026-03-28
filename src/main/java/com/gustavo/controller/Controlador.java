@@ -1,4 +1,10 @@
-package com.goias;
+package com.gustavo.controller;
+
+import com.gustavo.exceptions.LivroIndisponivelException;
+import com.gustavo.exceptions.LivroNaoEncontradoException;
+import com.gustavo.exceptions.MultaPendenteException;
+import com.gustavo.model.Livro;
+import com.gustavo.model.Usuario;
 
 import java.time.LocalDate;
 import java.util.Scanner;
@@ -14,8 +20,8 @@ public class Controlador {
         this.usuarioAtual = usuario;
     }
 
-    ArrayList<Livro> livros = new ArrayList<>();
-    ArrayList<Usuario> usuarios = new ArrayList<>();
+    private final ArrayList<Livro> livros = new ArrayList<>();
+    private ArrayList<Usuario> usuarios = new ArrayList<>();
     Scanner sc = new Scanner(System.in);
 
 
@@ -201,4 +207,5 @@ public class Controlador {
     public Usuario getUsuarioAtual() {
         return usuarioAtual;
     }
+
 }

@@ -1,4 +1,4 @@
-package com.goias;
+package com.gustavo.exceptions;
 
 public class LivroIndisponivelException extends Exception {
     public LivroIndisponivelException(String nomeLivro) {

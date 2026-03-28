@@ -4,11 +4,10 @@ import com.gustavo.model.Livro;
 import com.gustavo.model.Usuario;
 
 import java.util.Scanner;
-import java.util.ArrayList;
+
 public class Main {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
-        Livro livro = new Livro();
         Usuario usuario = new Usuario();
         Controlador controlador = new Controlador(usuario);
         int opcao;
@@ -44,11 +43,11 @@ public class Main {
                     break;
                 }
                 case 5: {
-                    if (controlador.livros.isEmpty()) {
+                    if (controlador.getLivros().isEmpty()) {
                         System.out.println("Sem Livros Disponiveis!");
                     }
                     else {
-                        for (Livro mostrarLivros : controlador.livros) {
+                        for (Livro mostrarLivros : controlador.getLivros()) {
                             System.out.println(mostrarLivros);
                         }
                     }

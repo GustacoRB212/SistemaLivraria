@@ -1,4 +1,4 @@
-package com.goias;
+package com.gustavo.exceptions;
 
 public class MultaPendenteException extends Exception {
     public MultaPendenteException(double valorMulta) {

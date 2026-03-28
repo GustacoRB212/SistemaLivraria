@@ -1,4 +1,4 @@
-package com.goias;
+package com.gustavo.exceptions;
 
 public class LivroNaoEncontradoException extends Exception {
     public LivroNaoEncontradoException(int id) {
