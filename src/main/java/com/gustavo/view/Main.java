@@ -1,4 +1,8 @@
-package com.goias;
+package com.gustavo.view;
+import com.gustavo.controller.Controlador;
+import com.gustavo.model.Livro;
+import com.gustavo.model.Usuario;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 public class Main {
