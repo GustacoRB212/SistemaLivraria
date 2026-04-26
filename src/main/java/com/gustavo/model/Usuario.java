@@ -10,6 +10,14 @@ public class Usuario {
     private double multaPendente = 0;
     private int id;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public Usuario(String nomeUsuario, String cpf) {
         this.nomeUsuario = nomeUsuario;
         this.cpf = cpf;
