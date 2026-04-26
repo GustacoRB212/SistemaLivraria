@@ -68,7 +68,7 @@ public class Main {
                     }
                     break;
                 case 6:
-                    if (controlador.g5etUsuarioAtual() == null) {
+                    if (controlador.getUsuarioAtual() == null) {
                         System.out.println("Faça o cadastro/login primeiro (Opção 7).");
                     } else {
                         controlador.visualizarLivros();
