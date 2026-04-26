@@ -8,6 +8,7 @@ public class Usuario {
     private ArrayList<Livro> livrosPegados = new ArrayList<>();
     private ArrayList<Livro> historico = new ArrayList<>();
     private double multaPendente = 0;
+    private int id;
 
     public Usuario(String nomeUsuario, String cpf) {
         this.nomeUsuario = nomeUsuario;
