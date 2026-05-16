@@ -49,4 +49,11 @@ public class Usuario {
     public void pagarMulta() { this.multaPendente = 0.0; }
     public boolean temMulta() { return multaPendente > 0.0; }
     public String getNomeUsuario() { return nomeUsuario; }
+
+    public void setLivrosPegados(ArrayList<Livro> livrosPegados) {
+        this.livrosPegados = livrosPegados;
+    }
+    public void setNomeUsuario(String nomeUsuario) {
+        this.nomeUsuario = nomeUsuario;
+    }
 }

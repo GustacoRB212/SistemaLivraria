@@ -1,7 +1,7 @@
 package com.gustavo.view;
 
 import com.gustavo.controller.Controlador;
-import com.gustavo.dao.LivroDAO; // Precisamos importar o DAO para listar na View
+import com.gustavo.dao.LivroDAO;
 import com.gustavo.model.Livro;
 import com.gustavo.model.Usuario;
 import com.gustavo.dao.Conexao;
@@ -14,7 +14,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        // Teste de conexão inicial
         try (Connection connection = Conexao.getConnection()) {
             if (connection != null) {
                 System.out.println("Conexão com PostgreSQL realizada com sucesso!");
@@ -25,7 +24,6 @@ public class Main {
         }
 
         Scanner sc = new Scanner(System.in);
-        // Iniciamos com um usuário "vazio" ou nulo, o Controlador gerenciará isso
         Controlador controlador = new Controlador(null);
         LivroDAO livroDAO = new LivroDAO(); // Usaremos para a opção 5
 
